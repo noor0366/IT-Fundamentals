@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Week 8</title>
+
+    <script>
+        counter = 0;
+        
+
+        function countClicks(imgname ) {
+            
+            counter = counter + 1;
+            var output = 'The link was pressed ' + counter + ' times.';
+            var element = document.getElementById('Bird-1');
+            element.src = imgname;
+
+        }
+    </script>
+
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    
+    <a href="#" onclick="countClicks('http://www.outgrabe.net/bird00.jpg');">Bird-1</a>
+    <a href="#" onclick="countClicks('http://www.outgrabe.net/bird01.jpg');">Bird-2</a>
+    <a href="#" onclick="countClicks('http://www.outgrabe.net/bird02.jpg');">Bird-3</a>
+    <a href="#" onclick="countClicks('http://www.outgrabe.net/bird03.jpg');">Bird-4</a>
+    <a href="#" onclick="countClicks('http://www.outgrabe.net/bird04.jpg');">Bird-5</a>
+    <img id= "Bird-1" src="http://www.outgrabe.net/bird00.jpg" />
+    <p id="boxy"></p>
+</body>
+</html>
